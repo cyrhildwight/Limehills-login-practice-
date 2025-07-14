@@ -37,7 +37,12 @@
         </div>
         <div>
           <label for="password" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Password</label>
-          <input type="password" id="password" name="password" autocomplete="off" required
+          <input type="password" id="password" name="password" autocomplete="new-password" required
+            class="w-full mt-1 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm focus:ring-2 focus:ring-purple-500 focus:outline-none"/>
+        </div>
+        <div>
+          <label for="password_confirmation" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Confirm Password</label>
+          <input type="password" id="password_confirmation" name="password_confirmation" autocomplete="new-password" required
             class="w-full mt-1 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm focus:ring-2 focus:ring-purple-500 focus:outline-none"/>
         </div>
         <div>
@@ -45,6 +50,7 @@
             class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-2 rounded-lg hover:from-purple-700 hover:to-pink-700 transition duration-300 shadow-md"/>
         </div>
       </form>
+
       <div class="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
         Already a member?
         <a href="{{ url('/login') }}" class="text-purple-700 dark:text-pink-400 font-medium hover:underline transition">Sign In</a>
@@ -53,4 +59,6 @@
   </div>
 </body>
 </html>
+
+
 
